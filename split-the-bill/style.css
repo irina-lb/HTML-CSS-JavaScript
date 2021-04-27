@@ -1,0 +1,97 @@
+html{
+    font-size: 10px;
+    color: rgb(75, 69, 69);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background-image: url('./main.jpg');
+    background-position: center;
+}
+
+main{
+    max-width: 70rem;
+    margin: 2rem auto;
+    background: rgba(206, 133, 91,.8);
+    padding: 2rem;
+    border-radius: 4rem;
+    box-shadow: 0 2px 2px  rgb(75, 69, 69) ;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    padding-bottom: 2rem;
+    text-shadow:0 2px 2px  rgb(75, 69, 69);
+}
+section{
+    background: rgb(253, 253, 253);
+    font-size: 1.8rem;
+    margin-bottom: 1.6rem;
+    padding: 0 1.6rem;
+    border-radius: 1rem;
+    box-shadow: inset 0 2px 2px  rgb(75, 69, 69);
+}
+section>div{
+    padding: 1.4rem 0;
+}
+
+.billSection{
+    display: flex;
+}
+.billSection label{
+    flex: 1;
+}
+.billSection input{
+    flex: 3;
+}
+
+input[type="number"]{
+    background: #f4f4f5;
+    font-size: 1.6rem;
+    border: 1px solid lightgray;
+    border-radius: .5rem;
+    padding: 0.8rem 0 0.8rem 0.8rem;
+    box-shadow: inset 0 2px 2px lightgray;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]:focus{
+    outline:none; 
+    border:1px solid lightgray;
+    -webkit-box-shadow: 0px 0px 4px 0px lightgray;
+    box-shadow: 0px 0px 4px 0px lightgray;
+}
+
+.spaceBetween{
+    display: flex;
+    justify-content: space-between;
+}
+.total{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.range{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #eee;
+    margin-top: 1.2rem;
+    border-radius: .3rem;
+    outline-color: transparent;
+}
+
+.range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background: rgb(75, 69, 69);
+    color:rgb(75, 69, 69);
+    cursor:pointer;
+    border:none;
+}

@@ -1,0 +1,138 @@
+html{
+    font-size: 10px;
+    font-weight: 300;
+}
+
+body{
+    background: url('numbers.jpg') center ;
+}
+
+main{
+    max-width: 50%;
+    margin: 1rem auto;
+    padding: 2rem 0;
+    text-align: center;
+    background: #f8f1e9;
+    border: 1rem solid #ef7b54;
+    border-radius: 2rem;
+    color:#1f2933
+}
+
+h2{
+    font-size: 2.2rem;
+    margin: 2rem 0;
+}
+p{
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.buttonWrapper{
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    border:none;
+    cursor: pointer;
+    background: #82cce9;
+    font-weight: 700;
+    padding: 2rem;
+    border-radius: 1rem 1rem 0 0 ;
+}
+button:hover{
+    background: #aae8ff;
+    font-size: 1.6rem;
+    transition: all .4s;
+}
+
+button:last-child{
+    background: #ef7b54;
+    border-radius: 0 0 1rem 1rem;
+}
+
+button:last-child:hover{
+    background: #ff9b79;
+    font-size: 1.6rem;
+    transition: all .4s;
+}
+
+button:focus{
+    outline:none;
+}
+
+h3{
+    font-size: 2rem;
+}
+input{
+    border: 1px solid lightgray;
+    border-radius: 1rem;
+    background: transparent;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    width: 16rem;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus{
+    outline:none; 
+    border:1px solid #ef7b54;
+    -webkit-box-shadow: 0px 0px 4px 0px #ef7b54;
+    box-shadow: 0px 0px 4px 0px #ef7b54;
+}
+
+#range{
+    display: flex;
+    background: #82cce9;
+    height: 5rem;
+    padding: 0;
+    margin: 0 1rem 4rem 1rem;
+    border-radius: 1rem;
+}
+#rangeOutput{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.stats{
+    text-align: left;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.info span{
+    font-size: 1.6rem;
+}
+
+#newGameButton{
+    border-radius: 1rem;
+}
+
+.flash{
+    animation: flash 1s infinite;
+}
+
+@keyframes flash{
+    0%{
+        opacity:1;
+    }
+    50%{
+        opacity:0.5
+    }
+    100%{
+        opacity:1
+    }
+}

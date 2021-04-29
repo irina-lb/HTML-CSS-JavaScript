@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess the number</title>
+</head>
+<body>
+    <main>
+        <div id="welcomeScreen">
+            <h2>Let's play! Are you ready?</h2>
+            <p>Guess the random number between 1 and 100.</p>
+            <section>
+                <p>Select difficulty setting:</p>
+                <div class="buttonWrapper">
+                    <button class="easyMode">Easy: 10 attempts</button>
+                    <button class="hardMode">Hard: 5 attempts</button>
+                </div>
+            </section>
+        </div>
+        <div class="gameArea">
+            <button id="newGameButton">NEW GAME</button>
+            <section>
+                <h3 id="textOutput">Your Guess</h3>
+                <input type="number" min="1" max="100" id="inputBox">
+            </section>
+            <section>
+                <p>Current range:</p>
+                <span id="rangeOutput">1-100</span>
+                <div id="range">
+                    <span id="low"></span>
+                    <span id="space"></span>
+                    <span id="high"></span>
+                </div>
+            </section>
+            <section class="stats">
+                <div class="info">
+                    <p>Number of previous attempts:</p>
+                    <span id="attempts">0</span>
+                </div>
+                <div class="info">
+                    <p>Your previous guess:</p>
+                    <span id="guesses">-</span>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
